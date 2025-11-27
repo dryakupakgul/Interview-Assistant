@@ -37,6 +37,7 @@ const quickQuestions = [
 { icon: TrendingUp, text: "Describe your experience with revenue growth and market share." },
 { icon: Users, text: "Tell me about your leadership and team management experience." },
 { icon: Award, text: "What makes you qualified for an executive role?" }
+{ icon: Award, text: "What kind of marketing and analytics expertise you can provide?" }
 ];
 
 const generateResponse = (question) => {
@@ -56,6 +57,10 @@ if (q.includes('loyalty') || q.includes('reward')) {
 return "I've architected and scaled multiple successful loyalty programs from inception to market leadership. At KFH, I launched KFH Rewards with a pan-bank approach and TAM Rewards for digital banking, managing partnerships with Mastercard, VISA, Qatar Airways, Turkish Airlines, and 200+ global brands. Previously, I led the complete transformation of Turkish Airlines' Miles & Smiles FFP, replacing the entire technology landscape including CRM, mobile apps, and partner connectivity. I also launched Kuwait's best credit card cashback program and pioneered the first POS redemption solution in Kuwait. My Certified Loyalty Marketing Professional credential underscores this expertise.";
 }
 
+if (q.includes('marketing') || q.includes('analytics')) {
+return "My expertise spans digital marketing, campaign management and optimization, and advanced analytics. I introduced predictive modeling and churn analytics to improve campaign ROI and implemented CRM modernization projects, and led seasonal and time sensitive card campaigns, personalization of offers. These initiatives reflect my ability to combine data-driven insights with innovative marketing strategies, aligning perfectly with new generation marketing’s mission to deliver impactful solutions through technology, analytics and AI.";
+}
+  
 if (q.includes('revenue') || q.includes('growth') || q.includes('market share') || q.includes('financial')) {
 return "I have a strong track record of driving measurable financial impact. At KFH, I increased card spend market share significantly, reduced churn rates, and boosted monthly active card usage through strategic initiatives. In my CRM role, I led campaigns that improved financing sales from 10M KD to 80M KD and delivered $1M+ in cost savings through CX-driven automation. I increased lead conversion rates from 1% to 20% through optimized multi-channel campaigns. My expertise in Customer Lifetime Value modeling, real-time pricing tools, and predictive analytics ensures data-driven decisions that maximize ROI and sustainable growth.";
 }
